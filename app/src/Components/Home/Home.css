@@ -10,13 +10,8 @@
 .left-menu{
     box-sizing: border-box;
     width: 50%;
-}
-
-.content{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -50%);
+    height: 92vh;
+    padding: 10%;
 }
 
 
@@ -61,7 +56,7 @@
 }
 
 .shareButton{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -100,21 +95,19 @@
     }
     .left-menu{
         width: 100%;
+        padding: 5%;
     }
     .shareButton{
-        width: 60%;
+        width: 58%;
         display: flex;
         justify-content: space-between;
         /* background-color: yellow; */
     }
     .right-menu{
         width: 100%;
+        margin-bottom: 20px;
     }
-    .content{
-        box-sizing: border-box;
-        padding: 5%;
-
-    }
+    
     .content h1{
         font-size: 24px;
     }
