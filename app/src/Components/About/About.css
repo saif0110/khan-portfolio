@@ -1,0 +1,28 @@
+.aboutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    gap: 50px;
+    /* padding-top: 50px;  */
+}
+#aboutImg{
+    height: 320px;
+    width: 240px;
+    background-image: url('../../assets/saif.jpg');
+    background-size: cover;
+}
+#aboutContent{
+    width: 45%;
+}
+#aboutContent h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .aboutContainer{
+        padding-left: 10%;
+        height: auto;
+    }
+}

@@ -1,0 +1,179 @@
+.headerContainer {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8vh;
+    box-shadow: 2px 1px 5px lightgray;
+    background-color: white;
+}
+
+.logo-container {
+
+    flex-grow: 1;
+}
+
+.navbar {
+    flex-grow: 1;
+}
+
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 10%;
+}
+
+
+li {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.active {
+    color: #f57c00;
+}
+
+.pending {
+    color: black;
+}
+
+#subscribe {
+    height: 36px;
+    width: 100px;
+    border: 2px solid #f57c00;
+    color: #f57c00;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: inherit;
+    position: relative;
+    transform: translate(0%, -20%);
+}
+
+#subscribe:hover {
+    cursor: pointer;
+    background-color: #f57c00;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: #f57c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    transform: rotate(45deg);
+    animation-name: mylogo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    transform-origin: top left;
+}
+
+@keyframes mylogo {
+    from {
+        transform: rotate(75deg);
+    }
+
+    to {
+        transform: rotate(25deg);
+    }
+}
+
+.name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+}
+
+#pin {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 18px;
+    right: 5px;
+}
+
+.menu-icon {
+    display: none;
+    /* Hide by default for larger screens */
+    cursor: pointer;
+}
+
+
+.menu-line {
+    height: 3px;
+    width: 68%;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.drawer{
+    margin-top: 12px;
+    height: 100vh;
+    width: 300px;
+    background-color: #f57c00;
+    position: relative;
+    top: 0px;
+    left: 60px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        margin-top: 12px;
+        height: 38px;
+        width: 60px;
+        display: flex;
+        /* Display menu icon for smaller screens */
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+        background-color: #f57c00;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+    .active {
+        color: white;
+    }
+
+    #subscribe{
+        color: white;
+        border: 2px solid white;
+    }
+}

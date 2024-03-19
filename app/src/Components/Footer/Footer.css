@@ -1,0 +1,39 @@
+
+
+.containerFooter{
+
+}
+#shareBtn{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.topFooter{
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    color: white;
+    min-height: 100px;
+}
+.topFooter h2{
+    margin-bottom: 0px;
+}
+.topFooter p{
+    font-size: 14px;
+}
+#topFooterContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+.bottomFooter{
+    background-color: #f57c00;
+    color: white;
+    display: flex;
+    padding-left: 12px;
+    font-size: 14px;
+}

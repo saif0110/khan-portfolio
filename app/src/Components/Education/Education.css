@@ -1,0 +1,21 @@
+
+.eduContainer{
+    display: flex;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.degreeYear{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.degreeYear h3{
+    margin-bottom: -10px;
+}
+.degreeYear p{
+    font-style: italic;
+    font-size: 13px;
+}

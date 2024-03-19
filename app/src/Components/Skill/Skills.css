@@ -1,0 +1,37 @@
+
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4%;
+}
+
+.skillContainer h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+#skills{
+    display: grid;
+    grid-template-columns: repeat(5, 14%);
+    justify-content: center;
+}
+
+#skills div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media(max-width: 768px){
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(3, 14%);
+        justify-content: center;
+        gap: 30px;
+    }
+}
