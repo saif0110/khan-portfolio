@@ -32,7 +32,7 @@ function Contact() {
     }
   };
   return (
-    <div className='contactContainer'>
+    <div className='contactContainer' >
       <div className='leftView'>
         <div id='text'>
           <h3>Get in touch:</h3>

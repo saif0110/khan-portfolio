@@ -26,7 +26,7 @@ export const Header = () => {
         setOpen(prev => !prev);
     }
     return (
-        <div className='headerContainer'>
+        <div className='headerContainer' >
             <div className='header'>
                 <div className='logo-container'>
                     <div className='logo'>
