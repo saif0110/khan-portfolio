@@ -21,7 +21,7 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:4000/contact', formData);
+      const response = await axios.post('https://portfolio-mailer-api.onrender.com/contact', formData);
       setLoading(false);
       setFormData({name: '', email: '', message:''});
       alert('Email sent successfully.');

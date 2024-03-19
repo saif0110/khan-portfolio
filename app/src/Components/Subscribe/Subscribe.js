@@ -16,7 +16,7 @@ function Subscribe() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:4000/subscribe', formData);
+      const response = await axios.post('https://portfolio-mailer-api.onrender.com/subscribe', formData);
       setLoading(false);
       setFormData({name: '', email: ''});
       alert('Subscribed! I will get back to you soon.');
